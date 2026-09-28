@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Biodata Mahasiswa</title>
+</head>
+<body>
+    <h2>Form Input Biodata Mahasiswa</h2>
+    <form action="prosesdatadiri.php" method="POST">
+        <!-- Nama (text) -->
+        Nama: <br>
+        <input type="text" name="nama" required><br><br>
+
+        <!-- NPM (text) -->
+        NPM: <br>
+        <input type="text" name="npm" required><br><br>
+
+        <!-- Jenis Kelamin (radio button) -->
+        Jenis Kelamin: <br>
+        <input type="radio" name="jk" value="Laki-laki" checked> Laki-laki<br>
+        <input type="radio" name="jk" value="Perempuan"> Perempuan<br><br>
+
+        <!-- Jurusan (combobox / select) -->
+        Jurusan: <br>
+        <select name="jurusan" required>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Sofware Engineering">Software Engineering</option>
+        </select><br><br>
+
+        <!-- Mata Kuliah yang disukai (checkbox) -->
+        Mata Kuliah yang Disukai: <br>
+        <input type="checkbox" name="mk1" value="Matematika" checked> Matematika<br>
+        <input type="checkbox" name="mk2" value="Instalasi Komputer"> Instalasi Komputer<br>
+        <input type="checkbox" name="mk3" value="Jaringan Komputer"> Jaringan Komputer<br>
+        <input type="checkbox" name="mk4" value="Program Linux"> Program Linux<br>
+        <input type="checkbox" name="mk5" value="Pemrograman Web"> Pemrograman Web<br><br>
+
+        <input type="submit" name="Pilih" value="Kirim Data">
+    </form>
+</body>
+</html>
